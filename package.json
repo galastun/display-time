@@ -1,0 +1,27 @@
+{
+  "name": "display-time",
+  "version": "1.0.0",
+  "description": "An Angular directive for displaying a clock.",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galastun/display-time.git"
+  },
+  "keywords": [
+    "angular",
+    "clock"
+  ],
+  "author": "Galastun",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/galastun/display-time/issues"
+  },
+  "homepage": "https://github.com/galastun/display-time#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0"
+  }
+}
