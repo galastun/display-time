@@ -1,6 +1,6 @@
-const dt = angular.module('display-time', []);
+var dt = angular.module('display-time', []);
 
-dt.directive('displayTime', function($timeout) {
+dt.directive('displayTime', function() {
   return {
         scope: {
           military: "@?",
@@ -12,11 +12,12 @@ dt.directive('displayTime', function($timeout) {
         controller: DisplayTime,
         controllerAs: 'display'
     };
-  
-   function DisplayTime($scope) {
-      const vm = this,
+
+  DisplayTime.$inject = ['$scope', '$timeout'];
+   function DisplayTime($scope, $timeout) {
+     var vm = this,
             delay = 500;
-      let dateString = '',
+     var dateString = '',
           timeOut = undefined,
           months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
           settings = {
